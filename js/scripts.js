@@ -59,6 +59,8 @@ function copyContract(){
 const heightOutput = document.querySelector('#height');
 const widthOutput = document.querySelector('#width');
 
+
+
 var w = $(window).width();
 var h = $(window).height();
 if(w < 992){
@@ -109,3 +111,8 @@ function resize_func(){
         $('.box .percent .num h2 span').css("font-size", "24px");
     }
 }
+
+setTimeout(function(){
+    $('body').addClass('loaded');
+    $('loader-wrapper').css('visibility', 'hidden !important');
+}, 5000);
