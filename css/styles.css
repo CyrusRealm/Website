@@ -109,7 +109,7 @@ body {
 
 #res_img{
     display: block;
-    width: 50%;
+    width: 10vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -165,7 +165,7 @@ body {
 }
 .box .percent svg circle:nth-child(2)
 {
-  stroke-dashoffset:calc(440 * (2 - (100 - 40)/100) );
+  stroke-dashoffset:550;
   stroke:#20c997;
   
 }
@@ -332,8 +332,9 @@ body {
   visibility: hidden;
 }
 
-
-
+.filter-green{
+  filter: invert(49%) sepia(23%) saturate(5273%) hue-rotate(116deg) brightness(100%) contrast(96%);
+}
 
 
 /* Loaded */
